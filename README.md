@@ -1,1 +1,1 @@
-# angular-devexpress-example
+# angular-example
