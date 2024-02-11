@@ -1,0 +1,56 @@
+<form (ngSubmit)="onSubmit()" #insertForm="ngForm">
+  <div class="form-main">
+    <div class="form-element form-group">
+      <label for="link">Sosyal Medya Linki</label>
+      <div class="form-input" id="link">
+        <input
+          class="form-control"
+          [(ngModel)]="model.link"
+          [ngModelOptions]="{ standalone: true }"
+          #link="ngModel"
+          type="text"
+          required
+        />
+      </div>
+    </div>
+    <div class="form-element form-group">
+      <label for="mame">Sosyal Medya Adı</label>
+      <div class="form-input" id="name">
+        <input
+          class="form-control"
+          [(ngModel)]="model.name"
+          [ngModelOptions]="{ standalone: true }"
+          type="text"
+          #name="ngModel"
+          required
+        />
+      </div>
+    </div>
+    <div class="form-element form-group">
+      <label for="description">Açıklama</label>
+      <div class="form-input" id="description">
+        <input
+          class="form-control"
+          [(ngModel)]="model.description"
+          [ngModelOptions]="{ standalone: true }"
+          type="text"
+          #description="ngModel"
+          required
+        />
+      </div>
+    </div>
+  </div>
+  <div class="form-footer">
+    <button
+      type="submit"
+      class="btn btn-success"
+      [disabled]="link.invalid || name.invalid || description.invalid"
+      [ngClass]="{
+        'btn-success': !link.invalid || !name.invalid || !description.invalid,
+        'btn-danger': link.invalid || name.invalid || description.invalid
+      }"
+    >
+      Kaydet
+    </button>
+  </div>
+</form>

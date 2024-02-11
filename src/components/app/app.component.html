@@ -1,1 +1,34 @@
-<router-outlet />
+<ng-container class="application">
+  <div class="header">
+    <div class="icon">
+      <a [routerLink]="['/']">
+        <img alt="" class="logo" src="assets/icons/linkedin-6-32.png" />
+      </a>
+    </div>
+    <div class="list">
+      <ul>
+        <li><a [routerLink]="['/socials']">Hakkımızda</a></li>
+        <li><a [routerLink]="['/socials']">Jüri - Yarışma Yazılımı</a></li>
+        <li><a [routerLink]="['/socials']">Word Ninja</a></li>
+        <li><a [routerLink]="['/socials']">Word Pyramids</a></li>
+      </ul>
+    </div>
+    <div class="socials">
+      <a [routerLink]="'/socials'">
+        <img alt="" class="logo" src="assets/icons/github-7-32.png" />
+      </a>
+      <a [routerLink]="'/socials'">
+        <img alt="" class="logo" src="assets/icons/linkedin-6-32.png" />
+      </a>
+      <a [routerLink]="'/socials'">
+        <img alt="" class="logo" src="assets/icons/youtube-3-32.png" />
+      </a>
+      <a [routerLink]="'/socials'">
+        <img alt="" class="logo" src="assets/icons/linkedin-6-32.png" />
+      </a>
+    </div>
+  </div>
+  <div class="router-body">
+    <router-outlet />
+  </div>
+</ng-container>
