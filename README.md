@@ -1,4 +1,4 @@
-- Ekleme modalı ile beraber örnek bir datagrid projesi oluşturdum.
+- Data ekleyebilen modalı ile beraber örnek bir datagrid projesi oluşturdum.
 - Angular material kullandım.
 
 
