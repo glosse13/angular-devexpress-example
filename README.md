@@ -5,4 +5,4 @@
 
 
 Çalıştırmak için.
-- npm install ve npm run start komutlarını kullanarak projeyi sizde deneyimleye bilirsiniz.
+- npm install ve npm run start komutlarını kullanarak projeyi sizde deneyimleyebilirsiniz.
